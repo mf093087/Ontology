@@ -1,0 +1,1110 @@
+@prefix : <http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/mofan/ontologies/2022/8/08092022ReconfiguringOntology> .
+
+<http://www.semanticweb.org/mofan/ontologies/2022/8/08092022ReconfiguringOntology> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#belongsToCatalogue
+:belongsToCatalogue rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#containsProduct
+:containsProduct rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#hasCapability
+:hasCapability rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#hasDeviceBlueprint
+:hasDeviceBlueprint rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#hasProductRequirement
+:hasProductRequirement rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#hasRequirement
+:hasRequirement rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#hasSimpleCapability
+:hasSimpleCapability rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#hasSubProcess
+:hasSubProcess rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#hasSubdeviceOrSubDeviceCombination
+:hasSubdeviceOrSubDeviceCombination rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#hasTimeline
+:hasTimeline rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#referTo
+:referTo rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#requiredCapability
+:requiredCapability rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#requiresProcess
+:requiresProcess rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#requiresProcessCapability
+:requiresProcessCapability rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf owl:topObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Spec1
+:Spec1 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Spec2
+:Spec2 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Spec3
+:Spec3 rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Spec4
+:Spec4 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#axes
+:axes rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#brand
+:brand rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#entityID
+:entityID rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#mass
+:mass rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#model
+:model rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#payload
+:payload rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#reachbility
+:reachbility rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#repeatability
+:repeatability rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#type
+:type rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#AdhesiveApplication
+:AdhesiveApplication rdf:type owl:Class ;
+                     rdfs:subClassOf :Preparation .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#AdhesiveCuring
+:AdhesiveCuring rdf:type owl:Class ;
+                rdfs:subClassOf :Joining .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#ArcWelding
+:ArcWelding rdf:type owl:Class ;
+            rdfs:subClassOf :MetalWelding .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Area
+:Area rdf:type owl:Class ;
+      rdfs:subClassOf :FactoryUnit .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Assembling
+:Assembling rdf:type owl:Class ;
+            rdfs:subClassOf :ProcessTaxonomyElement .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Bagging
+:Bagging rdf:type owl:Class ;
+         rdfs:subClassOf :Packaging .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Boxing
+:Boxing rdf:type owl:Class ;
+        rdfs:subClassOf :Packaging .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Buffering
+:Buffering rdf:type owl:Class ;
+           rdfs:subClassOf :Logistic .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Cell
+:Cell rdf:type owl:Class ;
+      rdfs:subClassOf :FactoryUnit .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Clamping
+:Clamping rdf:type owl:Class ;
+          rdfs:subClassOf :Fastening .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Cleaning
+:Cleaning rdf:type owl:Class ;
+          rdfs:subClassOf :Finalization ,
+                          :Preparation .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Clipping
+:Clipping rdf:type owl:Class ;
+          rdfs:subClassOf :ElasticDeformingFixating .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Coating
+:Coating rdf:type owl:Class ;
+         rdfs:subClassOf :Finalization .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#ColdWelding
+:ColdWelding rdf:type owl:Class ;
+             rdfs:subClassOf :Welding .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#ContinuousManufacturing
+:ContinuousManufacturing rdf:type owl:Class ;
+                         rdfs:subClassOf :Manufacturing ;
+                         owl:disjointWith :DiscreteManufacturing .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#ControlDevice
+:ControlDevice rdf:type owl:Class ;
+               rdfs:subClassOf :DeviceBlueprint .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#DeformingFixating
+:DeformingFixating rdf:type owl:Class ;
+                   rdfs:subClassOf :Joining .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Device
+:Device rdf:type owl:Class ;
+        rdfs:subClassOf :Resource ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :entityID ;
+                          owl:cardinality "1"^^xsd:nonNegativeInteger
+                        ] .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#DeviceBlueprint
+:DeviceBlueprint rdf:type owl:Class ;
+                 rdfs:subClassOf :Device ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasCapability ;
+                                   owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                 ] ;
+                 owl:disjointWith :IndividualDevice .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#DeviceCombination
+:DeviceCombination rdf:type owl:Class ;
+                   rdfs:subClassOf :Resource .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#DiscreteManufacturing
+:DiscreteManufacturing rdf:type owl:Class ;
+                       rdfs:subClassOf :Manufacturing .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#ElasticDeformingFixating
+:ElasticDeformingFixating rdf:type owl:Class ;
+                          rdfs:subClassOf :DeformingFixating ;
+                          owl:disjointWith :PlasticDeformingFixating .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#ElectroSlagWelding
+:ElectroSlagWelding rdf:type owl:Class ;
+                    rdfs:subClassOf :ArcWelding .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#ElectronBeamWelding
+:ElectronBeamWelding rdf:type owl:Class ;
+                     rdfs:subClassOf :ArcWelding .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Encapsulating
+:Encapsulating rdf:type owl:Class ;
+               rdfs:subClassOf :Packaging .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#EndEffector
+:EndEffector rdf:type owl:Class ;
+             rdfs:subClassOf :DeviceBlueprint .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#FactoryUnit
+:FactoryUnit rdf:type owl:Class ;
+             rdfs:subClassOf :Resource .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Fastening
+:Fastening rdf:type owl:Class ;
+           rdfs:subClassOf :Joining .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Feeding
+:Feeding rdf:type owl:Class ;
+         rdfs:subClassOf :Logistic .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#FeedingDevice
+:FeedingDevice rdf:type owl:Class ;
+               rdfs:subClassOf :DeviceBlueprint .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Finalization
+:Finalization rdf:type owl:Class ;
+              rdfs:subClassOf :ProcessTaxonomyElement .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#FixturingDevice
+:FixturingDevice rdf:type owl:Class ;
+                 rdfs:subClassOf :DeviceBlueprint .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#FlashButtWelding
+:FlashButtWelding rdf:type owl:Class ;
+                  rdfs:subClassOf :ResistanceWelding .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#FrictionWelding
+:FrictionWelding rdf:type owl:Class ;
+                 rdfs:subClassOf :PlasticWelding .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Gluing
+:Gluing rdf:type owl:Class ;
+        rdfs:subClassOf :AdhesiveCuring .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#GraspingDevice
+:GraspingDevice rdf:type owl:Class ;
+                rdfs:subClassOf :DeviceBlueprint .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#HeatTreatment
+:HeatTreatment rdf:type owl:Class ;
+               rdfs:subClassOf :Non-shapingManufacturing .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#HeatedAirWelding
+:HeatedAirWelding rdf:type owl:Class ;
+                  rdfs:subClassOf :PlasticWelding .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#HumanResource
+:HumanResource rdf:type owl:Class ;
+               rdfs:subClassOf :DeviceBlueprint .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Identification
+:Identification rdf:type owl:Class ;
+                rdfs:subClassOf :Qualifying .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#IndividualControlDevice
+:IndividualControlDevice rdf:type owl:Class ;
+                         rdfs:subClassOf :IndividualDevice .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#IndividualDevice
+:IndividualDevice rdf:type owl:Class ;
+                  rdfs:subClassOf :Device ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasDeviceBlueprint ;
+                                    owl:cardinality "1"^^xsd:nonNegativeInteger
+                                  ] .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#IndividualEndEffector
+:IndividualEndEffector rdf:type owl:Class ;
+                       rdfs:subClassOf :IndividualDevice .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#IndividualFeedingDevice
+:IndividualFeedingDevice rdf:type owl:Class ;
+                         rdfs:subClassOf :IndividualDevice .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#IndividualFixturingDevice
+:IndividualFixturingDevice rdf:type owl:Class ;
+                           rdfs:subClassOf :IndividualDevice .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#IndividualGraspingDevice
+:IndividualGraspingDevice rdf:type owl:Class ;
+                          rdfs:subClassOf :IndividualDevice .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#IndividualHumanResource
+:IndividualHumanResource rdf:type owl:Class ;
+                         rdfs:subClassOf :IndividualDevice .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#IndividualJoiningDevice
+:IndividualJoiningDevice rdf:type owl:Class ;
+                         rdfs:subClassOf :IndividualDevice .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#IndividualModifyingDevice
+:IndividualModifyingDevice rdf:type owl:Class ;
+                           rdfs:subClassOf :IndividualDevice .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#IndividualMovingDevice
+:IndividualMovingDevice rdf:type owl:Class ;
+                        rdfs:subClassOf :IndividualDevice .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#IndividualRobotDevice
+:IndividualRobotDevice rdf:type owl:Class ;
+                       rdfs:subClassOf :IndividualDevice ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :axes ;
+                                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :brand ;
+                                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :mass ;
+                                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :model ;
+                                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :payload ;
+                                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :reachbility ;
+                                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :repeatability ;
+                                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :type ;
+                                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                                       ] .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#IndividualSimpleDevice
+:IndividualSimpleDevice rdf:type owl:Class ;
+                        rdfs:subClassOf :IndividualDevice .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#IndividualStorageDevice
+:IndividualStorageDevice rdf:type owl:Class ;
+                         rdfs:subClassOf :IndividualDevice .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#IndividualToolingDevice
+:IndividualToolingDevice rdf:type owl:Class ;
+                         rdfs:subClassOf :IndividualDevice .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#InkMarking
+:InkMarking rdf:type owl:Class ;
+            rdfs:subClassOf :Marking .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Inspection
+:Inspection rdf:type owl:Class ;
+            rdfs:subClassOf :Qualifying .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Joining
+:Joining rdf:type owl:Class ;
+         rdfs:subClassOf :Assembling .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#JoiningDevice
+:JoiningDevice rdf:type owl:Class ;
+               rdfs:subClassOf :DeviceBlueprint .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Labelling
+:Labelling rdf:type owl:Class ;
+           rdfs:subClassOf :Marking .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#LaserMarking
+:LaserMarking rdf:type owl:Class ;
+              rdfs:subClassOf :Marking .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#LaserWelding
+:LaserWelding rdf:type owl:Class ;
+              rdfs:subClassOf :MetalWelding .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Line
+:Line rdf:type owl:Class ;
+      rdfs:subClassOf :FactoryUnit .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Loading
+:Loading rdf:type owl:Class ;
+         rdfs:subClassOf :Preparation .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Logistic
+:Logistic rdf:type owl:Class ;
+          rdfs:subClassOf :ProcessTaxonomyElement .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Manipulation
+:Manipulation rdf:type owl:Class ;
+              rdfs:subClassOf :Logistic .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Manufacturing
+:Manufacturing rdf:type owl:Class ;
+               rdfs:subClassOf :ProcessTaxonomyElement .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Marking
+:Marking rdf:type owl:Class ;
+         rdfs:subClassOf :Finalization ,
+                         :Non-shapingManufacturing .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Material
+:Material rdf:type owl:Class ;
+          rdfs:subClassOf :ProductElement ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasRequirement ;
+                            owl:allValuesFrom :Requirement
+                          ] .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#MaterialAdding
+:MaterialAdding rdf:type owl:Class ;
+                rdfs:subClassOf :ShapingManufacturing .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#MaterialConserving
+:MaterialConserving rdf:type owl:Class ;
+                    rdfs:subClassOf :ShapingManufacturing .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#MaterialRemoving
+:MaterialRemoving rdf:type owl:Class ;
+                  rdfs:subClassOf :ShapingManufacturing .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Measuring
+:Measuring rdf:type owl:Class ;
+           rdfs:subClassOf :Qualifying .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#MetalWelding
+:MetalWelding rdf:type owl:Class ;
+              rdfs:subClassOf :Welding .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#ModifyingDevice
+:ModifyingDevice rdf:type owl:Class ;
+                 rdfs:subClassOf :DeviceBlueprint .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#MovingDevice
+:MovingDevice rdf:type owl:Class ;
+              rdfs:subClassOf :DeviceBlueprint .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Nailing
+:Nailing rdf:type owl:Class ;
+         rdfs:subClassOf :Fastening .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Non-shapingManufacturing
+:Non-shapingManufacturing rdf:type owl:Class ;
+                          rdfs:subClassOf :DiscreteManufacturing ;
+                          owl:disjointWith :ShapingManufacturing .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Packaging
+:Packaging rdf:type owl:Class ;
+           rdfs:subClassOf :Finalization .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Part
+:Part rdf:type owl:Class ;
+      rdfs:subClassOf :ProductElement ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasRequirement ;
+                        owl:allValuesFrom :Requirement
+                      ] .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#PercussionWelding
+:PercussionWelding rdf:type owl:Class ;
+                   rdfs:subClassOf :ResistanceWelding .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf :Resource .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#PlasmaArcWelding
+:PlasmaArcWelding rdf:type owl:Class ;
+                  rdfs:subClassOf :ArcWelding .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#PlasticDeformingFixating
+:PlasticDeformingFixating rdf:type owl:Class ;
+                          rdfs:subClassOf :DeformingFixating .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#PlasticWelding
+:PlasticWelding rdf:type owl:Class ;
+                rdfs:subClassOf :Welding .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Preparation
+:Preparation rdf:type owl:Class ;
+             rdfs:subClassOf :ProcessTaxonomyElement .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Printing
+:Printing rdf:type owl:Class ;
+          rdfs:subClassOf :Marking .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#ProcessTaxonomyElement
+:ProcessTaxonomyElement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Product
+:Product rdf:type owl:Class ;
+         rdfs:subClassOf :ProductElement ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasRequirement ;
+                           owl:allValuesFrom :Requirement
+                         ] .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#ProductElement
+:ProductElement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#ProjectionWelding
+:ProjectionWelding rdf:type owl:Class ;
+                   rdfs:subClassOf :ResistanceWelding .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Qualifying
+:Qualifying rdf:type owl:Class ;
+            rdfs:subClassOf :ProcessTaxonomyElement .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#RawMaterial
+:RawMaterial rdf:type owl:Class ;
+             rdfs:subClassOf :Resource .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#RealDeviceCombination
+:RealDeviceCombination rdf:type owl:Class ;
+                       rdfs:subClassOf :DeviceCombination ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :hasSubdeviceOrSubDeviceCombination ;
+                                         owl:allValuesFrom [ rdf:type owl:Class ;
+                                                             owl:unionOf ( :IndividualDevice
+                                                                           :Person
+                                                                           :RealDeviceCombination
+                                                                         )
+                                                           ]
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :hasSubdeviceOrSubDeviceCombination ;
+                                         owl:minCardinality "2"^^xsd:nonNegativeInteger
+                                       ] ;
+                       owl:disjointWith :TestDeviceCombination .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#ReconfigurationSolutions
+:ReconfigurationSolutions rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#RequiredProcess
+:RequiredProcess rdf:type owl:Class ;
+                 rdfs:subClassOf :Requirement .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Requirement
+:Requirement rdf:type owl:Class ;
+             rdfs:subClassOf :ProductElement .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#ResistanceWelding
+:ResistanceWelding rdf:type owl:Class ;
+                   rdfs:subClassOf :MetalWelding .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Resource
+:Resource rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Riveting
+:Riveting rdf:type owl:Class ;
+          rdfs:subClassOf :Fastening .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#RobotDevice
+:RobotDevice rdf:type owl:Class ;
+             rdfs:subClassOf :DeviceBlueprint ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :axes ;
+                               owl:cardinality "1"^^xsd:nonNegativeInteger
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :brand ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:string
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :mass ;
+                               owl:cardinality "1"^^xsd:nonNegativeInteger
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :model ;
+                               owl:cardinality "1"^^xsd:nonNegativeInteger
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :payload ;
+                               owl:cardinality "1"^^xsd:nonNegativeInteger
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :reachbility ;
+                               owl:cardinality "1"^^xsd:nonNegativeInteger
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :repeatability ;
+                               owl:cardinality "1"^^xsd:nonNegativeInteger
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :type ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:string
+                             ] .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Routing
+:Routing rdf:type owl:Class ;
+         rdfs:subClassOf :Logistic .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#SchieldedMetalArcWelding
+:SchieldedMetalArcWelding rdf:type owl:Class ;
+                          rdfs:subClassOf :ArcWelding .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Sealing
+:Sealing rdf:type owl:Class ;
+         rdfs:subClassOf :Packaging .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#SeamWelding
+:SeamWelding rdf:type owl:Class ;
+             rdfs:subClassOf :ResistanceWelding .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Sewing
+:Sewing rdf:type owl:Class ;
+        rdfs:subClassOf :Fastening .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#ShapingManufacturing
+:ShapingManufacturing rdf:type owl:Class ;
+                      rdfs:subClassOf :DiscreteManufacturing .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Shrinking
+:Shrinking rdf:type owl:Class ;
+           rdfs:subClassOf :ElasticDeformingFixating .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#SimpleDevice
+:SimpleDevice rdf:type owl:Class ;
+              rdfs:subClassOf :DeviceBlueprint .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Site
+:Site rdf:type owl:Class ;
+      rdfs:subClassOf :FactoryUnit .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Snapping
+:Snapping rdf:type owl:Class ;
+          rdfs:subClassOf :ElasticDeformingFixating .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Software
+:Software rdf:type owl:Class ;
+          rdfs:subClassOf :Resource .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#SolderPasterApplication
+:SolderPasterApplication rdf:type owl:Class ;
+                         rdfs:subClassOf :Preparation .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Soldering
+:Soldering rdf:type owl:Class ;
+           rdfs:subClassOf :Joining .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#SpotWelding
+:SpotWelding rdf:type owl:Class ;
+             rdfs:subClassOf :ResistanceWelding .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#SpringFastening
+:SpringFastening rdf:type owl:Class ;
+                 rdfs:subClassOf :Fastening .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#StampMarking
+:StampMarking rdf:type owl:Class ;
+              rdfs:subClassOf :Marking .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Stapling
+:Stapling rdf:type owl:Class ;
+          rdfs:subClassOf :Fastening .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Station
+:Station rdf:type owl:Class ;
+         rdfs:subClassOf :FactoryUnit .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#StorageDevice
+:StorageDevice rdf:type owl:Class ;
+               rdfs:subClassOf :DeviceBlueprint .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#StudWelding
+:StudWelding rdf:type owl:Class ;
+             rdfs:subClassOf :ResistanceWelding .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#SurfaceFinishing
+:SurfaceFinishing rdf:type owl:Class ;
+                  rdfs:subClassOf :Non-shapingManufacturing .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Taping
+:Taping rdf:type owl:Class ;
+        rdfs:subClassOf :Fastening .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#TestDeviceCombination
+:TestDeviceCombination rdf:type owl:Class ;
+                       rdfs:subClassOf :DeviceCombination ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :hasSubdeviceOrSubDeviceCombination ;
+                                         owl:allValuesFrom [ rdf:type owl:Class ;
+                                                             owl:unionOf ( :DeviceBlueprint
+                                                                           :IndividualDevice
+                                                                           :Person
+                                                                           :RealDeviceCombination
+                                                                           :TestDeviceCombination
+                                                                         )
+                                                           ]
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :hasSubdeviceOrSubDeviceCombination ;
+                                         owl:minCardinality "2"^^xsd:nonNegativeInteger
+                                       ] .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Testing
+:Testing rdf:type owl:Class ;
+         rdfs:subClassOf :Qualifying .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#ThermalCuring
+:ThermalCuring rdf:type owl:Class ;
+               rdfs:subClassOf :AdhesiveCuring .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#ToolingDevice
+:ToolingDevice rdf:type owl:Class ;
+               rdfs:subClassOf :DeviceBlueprint .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#TungstenArcWelding
+:TungstenArcWelding rdf:type owl:Class ;
+                    rdfs:subClassOf :ArcWelding .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#UV-curing
+:UV-curing rdf:type owl:Class ;
+           rdfs:subClassOf :AdhesiveCuring .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#UltrasonicWelding
+:UltrasonicWelding rdf:type owl:Class ;
+                   rdfs:subClassOf :PlasticWelding .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Unloading
+:Unloading rdf:type owl:Class ;
+           rdfs:subClassOf :Finalization .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Unpacking
+:Unpacking rdf:type owl:Class ;
+           rdfs:subClassOf :Preparation .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Wedging
+:Wedging rdf:type owl:Class ;
+         rdfs:subClassOf :ElasticDeformingFixating .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Welding
+:Welding rdf:type owl:Class ;
+         rdfs:subClassOf :Joining .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Wrapping
+:Wrapping rdf:type owl:Class ;
+          rdfs:subClassOf :Packaging .
+
+
+###  http://www.semanticweb.org/mofan/ontologies/2022/8/untitled-ontology-14#Writing
+:Writing rdf:type owl:Class ;
+         rdfs:subClassOf :Marking .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AdhesiveCuring
+                :DeformingFixating
+                :Fastening
+                :Soldering
+                :Welding
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ArcWelding
+                :LaserWelding
+                :ResistanceWelding
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Area
+                :Cell
+                :Line
+                :Site
+                :Station
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Assembling
+                :Finalization
+                :Logistic
+                :Manufacturing
+                :Preparation
+                :Qualifying
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Bagging
+                :Boxing
+                :Encapsulating
+                :Sealing
+                :Wrapping
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Cleaning
+                :Coating
+                :Marking
+                :Packaging
+                :Unloading
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ColdWelding
+                :MetalWelding
+                :PlasticWelding
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ControlDevice
+                :EndEffector
+                :FeedingDevice
+                :FixturingDevice
+                :GraspingDevice
+                :HumanResource
+                :JoiningDevice
+                :ModifyingDevice
+                :MovingDevice
+                :RobotDevice
+                :SimpleDevice
+                :StorageDevice
+                :ToolingDevice
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ElectroSlagWelding
+                :ElectronBeamWelding
+                :PlasmaArcWelding
+                :SchieldedMetalArcWelding
+                :TungstenArcWelding
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :FlashButtWelding
+                :PercussionWelding
+                :ProjectionWelding
+                :SeamWelding
+                :SpotWelding
+                :StudWelding
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :FrictionWelding
+                :HeatedAirWelding
+                :UltrasonicWelding
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Gluing
+                :ThermalCuring
+                :UV-curing
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :HeatTreatment
+                :Marking
+                :SurfaceFinishing
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Identification
+                :Inspection
+                :Measuring
+                :Testing
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :IndividualControlDevice
+                :IndividualEndEffector
+                :IndividualFeedingDevice
+                :IndividualFixturingDevice
+                :IndividualGraspingDevice
+                :IndividualHumanResource
+                :IndividualJoiningDevice
+                :IndividualModifyingDevice
+                :IndividualMovingDevice
+                :IndividualRobotDevice
+                :IndividualSimpleDevice
+                :IndividualStorageDevice
+                :IndividualToolingDevice
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :InkMarking
+                :Labelling
+                :LaserMarking
+                :Printing
+                :StampMarking
+                :Writing
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :MaterialAdding
+                :MaterialConserving
+                :MaterialRemoving
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
