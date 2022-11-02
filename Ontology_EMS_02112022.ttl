@@ -16,26 +16,14 @@
 ###  http://www.semanticweb.org/basemelshafei/ontologies/2022/7/Ontology_EMS#hasUtilisation
 :hasUtilisation rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf owl:topObjectProperty ;
-                rdfs:domain [ rdf:type owl:Restriction ;
-                              owl:onProperty :hasUtilisation ;
-                              owl:someValuesFrom :Task
-                            ] ;
-                rdfs:range [ rdf:type owl:Restriction ;
-                             owl:onProperty :hasUtilisation ;
-                             owl:someValuesFrom :Utilisation
-                           ] .
+                rdfs:domain :Task ;
+                rdfs:range :Utilisation .
 
 
 ###  http://www.semanticweb.org/basemelshafei/ontologies/2022/7/Ontology_EMS#requiredProduct
 :requiredProduct rdf:type owl:ObjectProperty ;
-                 rdfs:domain [ rdf:type owl:Restriction ;
-                               owl:onProperty :requiredProduct ;
-                               owl:someValuesFrom :Task
-                             ] ;
-                 rdfs:range [ rdf:type owl:Restriction ;
-                              owl:onProperty :requiredProduct ;
-                              owl:someValuesFrom :Product
-                            ] .
+                 rdfs:domain :Task ;
+                 rdfs:range :Product .
 
 
 #################################################################
