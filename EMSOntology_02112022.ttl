@@ -1,0 +1,747 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#"
+     xml:base="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
+    <owl:Ontology rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel">
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eeva Järvenpää</dc:contributor>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Niko Siltala</dc:contributor>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Otto Hylli</dc:contributor>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eeva Järvenpää</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-11-22</dc:date>
+        <dc:description xml:lang="en">Process taxonomy (PT) defines the taxonomic hierarchy between different processes.</dc:description>
+        <dc:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">en</dc:language>
+        <dc:rights xml:lang="en">This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0). To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/ </dc:rights>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process taxonomy ontology</dc:title>
+        <rdfs:comment xml:lang="en">Process taxonomy (PT) defines the taxonomic hierarchy between different processes.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ontology has been defined at Tampere University of Technology, Finland, by Eeva Järvenpää, Niko Siltala and Otto Hylli. The research has received funding from the European Union Horizon 2020 Programm under grant agreement nbr 680759 (Project ReCaM - Rapid Reconfiguration of Flexible Production Systems through Capability-based Adaptation, Auto-configuration and Integrated tools for Production Planning)
+
+Licencing: Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)
+To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/ </rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process taxonomy ontology</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.0.2</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/language -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/language"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#AdhesiveCuring -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#AdhesiveCuring">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Joining"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#DeformingFixating"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Fastening"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Soldering"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Welding"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Processes which fix two or more parts together by applying some sort of adhesives.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ArcWelding -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ArcWelding">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#MetalWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#LaserWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ResistanceWelding"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Assembling -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Assembling">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ProcessTaxonomyElement"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parent class for assembly related processes.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#BlindRiveting -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#BlindRiveting">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Riveting"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is the process for performing blind riveting. It means riveting from only one side of the product.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Clamping -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Clamping">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Fastening"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Nailing"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Riveting"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Screwing"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Sewing"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#SpringFastening"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Stapling"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Taping"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Clinching -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Clinching">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#PlasticDeformingFixating"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Crimping"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Folding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Twisting"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Clipping -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Clipping">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ElasticDeformingFixating"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Shrinking"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Snapping"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Wedging"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ColdWelding -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ColdWelding">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Welding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#MetalWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#PlasticWelding"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Crimping -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Crimping">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#PlasticDeformingFixating"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Folding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Twisting"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#DeformingFixating -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#DeformingFixating">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Joining"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Fastening"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Soldering"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Welding"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DeformingFixating class includes processes which fixes two or more parts together by deforming the parts.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#DipSoldering -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#DipSoldering">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Soldering"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#FurnaceSoldering"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#InductionSoldering"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#IronSoldering"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ResistanceSoldering"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#TorchSoldering"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ElasticDeformingFixating -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ElasticDeformingFixating">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#DeformingFixating"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ElasticDeforming class includes processes which fixes two or more parts together by elastically deforming the parts (reversible).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ElectroSlagWelding -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ElectroSlagWelding">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ArcWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ElectronBeamWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#PlasmaArcWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ShieldedMetalArcWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#TungstenArcWelding"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ElectronBeamWelding -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ElectronBeamWelding">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ArcWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#PlasmaArcWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ShieldedMetalArcWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#TungstenArcWelding"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Fastening -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Fastening">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Joining"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Soldering"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Welding"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fastening class includes processes in which parts are fixed together by using mechanical fasteners.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#FlashButtWelding -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#FlashButtWelding">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ResistanceWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#PercussionWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ProjectionWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#SeamWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#SpotWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#StudWelding"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Folding -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Folding">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#PlasticDeformingFixating"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Twisting"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#FrictionWelding -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#FrictionWelding">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#PlasticWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#HeatedAirWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#UltrasonicWelding"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#FurnaceSoldering -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#FurnaceSoldering">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Soldering"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#InductionSoldering"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#IronSoldering"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ResistanceSoldering"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#TorchSoldering"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Gluing -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Gluing">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#AdhesiveCuring"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ThermalCuring"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#UV-curing"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fixing two or more parts together with glue, which doesn&apos;t need any specific curing process (e.g. heating or UV light).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Hammering -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Hammering">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ElasticDeformingFixating"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#HeatedAirWelding -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#HeatedAirWelding">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#PlasticWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#UltrasonicWelding"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ImpactRiveting -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ImpactRiveting">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Riveting"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#OrbitalRiveting"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#RadialRiveting"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is a process for performing impact riveting (linear movement).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#InductionSoldering -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#InductionSoldering">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Soldering"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#IronSoldering"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ResistanceSoldering"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#TorchSoldering"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#IronSoldering -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#IronSoldering">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Soldering"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ResistanceSoldering"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#TorchSoldering"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Joining -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Joining">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Assembling"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parent class for joining related process. Joining includes processes which join (fix) two or more parts together during assembly process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#LaserWelding -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#LaserWelding">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#MetalWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ResistanceWelding"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#MetalWelding -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#MetalWelding">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Welding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#PlasticWelding"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#MountingO-ring -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#MountingO-ring">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ElasticDeformingFixating"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process of mounting o-rings.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Nailing -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Nailing">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Fastening"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Riveting"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Screwing"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Sewing"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#SpringFastening"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Stapling"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Taping"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process of joining two or more parts by application of nails.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#OrbitalRiveting -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#OrbitalRiveting">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Riveting"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#RadialRiveting"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is a process for performing orbital riveting (orbital movement).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#PercussionWelding -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#PercussionWelding">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ResistanceWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ProjectionWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#SeamWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#SpotWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#StudWelding"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#PlasmaArcWelding -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#PlasmaArcWelding">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ArcWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ShieldedMetalArcWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#TungstenArcWelding"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#PlasticDeformingFixating -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#PlasticDeformingFixating">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#DeformingFixating"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PlasticDeforming class includes processes which fixes two or more parts together by plastically deforming the parts (irreversible).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#PlasticWelding -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#PlasticWelding">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Welding"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ProcessTaxonomyElement -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ProcessTaxonomyElement"/>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ProjectionWelding -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ProjectionWelding">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ResistanceWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#SeamWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#SpotWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#StudWelding"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#RadialRiveting -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#RadialRiveting">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Riveting"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is a process for performing radial riveting (radial movement).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ResistanceSoldering -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ResistanceSoldering">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Soldering"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#TorchSoldering"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ResistanceWelding -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ResistanceWelding">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#MetalWelding"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Riveting -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Riveting">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Fastening"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Screwing"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Sewing"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#SpringFastening"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Stapling"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Taping"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process of joining two or more parts by application of rivets.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Screwing -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Screwing">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Fastening"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Sewing"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#SpringFastening"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Stapling"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Taping"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process of joining two or more parts by application of screws.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#SeamWelding -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#SeamWelding">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ResistanceWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#SpotWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#StudWelding"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Sewing -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Sewing">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Fastening"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#SpringFastening"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Stapling"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Taping"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The process of joining two parts through the sewing of the parts edges. The operation is performed by alternately crossing up and down a series of holes performed on the two overlapped edges with some kind of string.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ShieldedMetalArcWelding -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ShieldedMetalArcWelding">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ArcWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#TungstenArcWelding"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Shrinking -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Shrinking">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ElasticDeformingFixating"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Snapping"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Wedging"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Snapping -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Snapping">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ElasticDeformingFixating"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Wedging"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Soldering -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Soldering">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Joining"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Welding"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soldering is a process in which two or more parts are joined together by melting and putting a filler metal (solder) into the joint.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#SpotWelding -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#SpotWelding">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ResistanceWelding"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#StudWelding"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#SpringFastening -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#SpringFastening">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Fastening"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Stapling"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Taping"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process of joining two or more parts by application of springs.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Stapling -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Stapling">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Fastening"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Taping"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The process of joining two or more parts through the application and deformation of staples.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#StudWelding -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#StudWelding">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ResistanceWelding"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Taping -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Taping">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Fastening"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process of joining two or more parts by application of tape.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ThermalCuring -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ThermalCuring">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#AdhesiveCuring"/>
+        <owl:disjointWith rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#UV-curing"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fixing two or more parts together with adhesive which is heated.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ThreadRunning -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ThreadRunning">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Fastening"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process to attach parts together by thread features.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#TighteningFromSide -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#TighteningFromSide">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Fastening"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#TorchSoldering -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#TorchSoldering">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Soldering"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#TungstenArcWelding -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#TungstenArcWelding">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ArcWelding"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Twisting -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Twisting">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#PlasticDeformingFixating"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#UV-curing -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#UV-curing">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#AdhesiveCuring"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fixing two or more parts together by using adhesive, which is cured by UV light.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#UltrasonicWelding -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#UltrasonicWelding">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#PlasticWelding"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Wedging -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Wedging">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#ElasticDeformingFixating"/>
+    </owl:Class>
+    
+
+
+    <!-- https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Welding -->
+
+    <owl:Class rdf:about="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Welding">
+        <rdfs:subClassOf rdf:resource="https://resourcedescription.rd.tuni.fi/ontology/processTaxonomyModel#Joining"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parent class for various welding processes. Welding involves joining two or more parts together by causing fusion by using heat or pressure.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
