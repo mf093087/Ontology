@@ -7,8 +7,7 @@
 @base <http://www.semanticweb.org/mofan/ontologies/2022/10/Ontology_EMS> .
 
 <http://www.semanticweb.org/mofan/ontologies/2022/10/Ontology_EMS> rdf:type owl:Ontology ;
-                                                                    owl:imports 
-                                                                                <https://resourcedescription.rd.tuni.fi/ontology/productModel> ,
+                                                                    owl:imports <https://resourcedescription.rd.tuni.fi/ontology/productModel> ,
                                                                                 <https://resourcedescription.rd.tuni.fi/ontology/resourceModel> .
 
 #################################################################
