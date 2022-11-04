@@ -75,16 +75,14 @@ owl:cardinality rdf:type owl:AnnotationProperty .
 :hasAllowedItemShapeAndSize_internal_max rdf:type owl:ObjectProperty ;
                                          rdfs:subPropertyOf :CapabilityParametersAdditional ;
                                          rdfs:range :ShapeAndSizeDefinition ;
-                                         rdfs:comment "This property is used to define the shape and maximun internal size of 
-items that can be handled with the capability."^^xsd:string .
+                                         rdfs:comment "This property is used to define the shape and maximun internal size of items that can be handled with the capability."^^xsd:string .
 
 
 ###  http://resourcedescription.tut.fi/ontology/capabilityModel#hasAllowedItemShapeAndSize_internal_min
 :hasAllowedItemShapeAndSize_internal_min rdf:type owl:ObjectProperty ;
                                          rdfs:subPropertyOf :CapabilityParametersAdditional ;
                                          rdfs:range :ShapeAndSizeDefinition ;
-                                         rdfs:comment "This property is used to define the shape and minimun internal size of 
-items that can be handled with the capability."^^xsd:string .
+                                         rdfs:comment "This property is used to define the shape and minimun internal size of items that can be handled with the capability."^^xsd:string .
 
 
 ###  http://resourcedescription.tut.fi/ontology/capabilityModel#hasAllowedItemShapeAndSize_max
@@ -104,16 +102,14 @@ items that can be handled with the capability."^^xsd:string .
 ###  http://resourcedescription.tut.fi/ontology/capabilityModel#hasAllowedObjectSize
 :hasAllowedObjectSize rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf :CapabilityParametersAdditional ;
-                      rdfs:comment "This parameter is used to
- save the allowed size of the associated object, e.g. a tray of a tray feeder."^^xsd:string .
+                      rdfs:comment "This parameter is used to save the allowed size of the associated object, e.g. a tray of a tray feeder."^^xsd:string .
 
 
 ###  http://resourcedescription.tut.fi/ontology/capabilityModel#hasFixturingShapeAndSpace_max
 :hasFixturingShapeAndSpace_max rdf:type owl:ObjectProperty ;
                                rdfs:subPropertyOf :CapabilityParametersAdditional ;
                                rdfs:range :ShapeAndSizeDefinition ;
-                               rdfs:comment "This parameter is used to save the information related to the maximum 
-size and shape of the fixtured product. This property is used if the shape is relevant. Otherwise the bounding box type parameter hasItemSize_max can be used."^^xsd:string .
+                               rdfs:comment "This parameter is used to save the information related to the maximum  size and shape of the fixtured product. This property is used if the shape is relevant. Otherwise the bounding box type parameter hasItemSize_max can be used."^^xsd:string .
 
 
 ###  http://resourcedescription.tut.fi/ontology/capabilityModel#hasFixturingShapeAndSpace_min
@@ -158,8 +154,7 @@ erty is used to link the capabilities to the maximum item size they can handle. 
                         rdfs:subPropertyOf :CapabilityParametersAdditional ;
                         rdf:type owl:FunctionalProperty ;
                         rdfs:range :LinearMovementRange ;
-                        rdfs:comment "This parameter is used to give details on the movement ranges of 
- translational movement capability."^^xsd:string .
+                        rdfs:comment "This parameter is used to give details on the movement ranges of translational movement capability."^^xsd:string .
 
 
 ###  http://resourcedescription.tut.fi/ontology/capabilityModel#hasProcessDescription
@@ -189,8 +184,7 @@ erty is used to link the capabilities to the maximum item size they can handle. 
                           rdfs:subPropertyOf :CapabilityParametersAdditional ;
                           rdf:type owl:FunctionalProperty ;
                           rdfs:range :RotationalMovementRange ;
-                          rdfs:comment "This
- parameter is used to give details on the movement ranges of rotational capability."^^xsd:string .
+                          rdfs:comment "This parameter is used to give details on the movement ranges of rotational capability."^^xsd:string .
 
 
 ###  http://resourcedescription.tut.fi/ontology/capabilityModel#hasShapeAndSize
@@ -231,8 +225,7 @@ erty is used to link the capabilities to the maximum item size they can handle. 
                                rdfs:subPropertyOf :CapabilityParametersAdditional ;
                                rdf:type owl:FunctionalProperty ;
                                rdfs:range :Workspace ;
-                               rdfs:comment "This
- property is used to link the moving capability to a certain workspace type and its dimensions."^^xsd:string .
+                               rdfs:comment "This property is used to link the moving capability to a certain workspace type and its dimensions."^^xsd:string .
 
 
 ###  http://resourcedescription.tut.fi/ontology/capabilityModel#referToTheDocument
@@ -336,8 +329,7 @@ is a parent property for all the capability related datatype properties."^^xsd:s
                           rdfs:subPropertyOf :ringSizeParameter ;
                           rdf:type owl:FunctionalProperty ;
                           rdfs:range xsd:float ;
-                          rdfs:comment "Maximum internal diameter of the handled item."^^xsd:string ,
-                                       "Unit: Millimeter (mm)"^^xsd:string .
+                          rdfs:comment "Maximum internal diameter of the handled item."^^xsd:string , "Unit: Millimeter (mm)"^^xsd:string .
 
 
 ###  http://resourcedescription.tut.fi/ontology/capabilityModel#Lateral_offset
